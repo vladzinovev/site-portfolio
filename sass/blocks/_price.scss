@@ -1,0 +1,56 @@
+.price{
+    min-height: 345px;
+    padding-top: 60px;
+    &_list{
+        margin-top: 60px;
+        margin-left: 75px;
+        margin-right: 51px;
+        display: flex;
+        justify-content: space-between;
+        .list{
+            width: 340px;
+            &_block{
+                margin-top: 15px;
+                min-height: 44px;
+                position: relative;
+                @include before_circle;
+                &:before{
+                    width: 15px;
+                    height: 15px;
+                    top: 1px;
+                    left: -26px;
+                }
+
+                .title_price{
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    .title1{
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #000000;
+                    }
+                    .price1{
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #000000;
+
+                    }
+                }
+                .descr{
+                    margin-top: 5px;
+                    width: 100%;
+                    
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #000000;
+                }
+            }
+        }
+       
+    }
+}

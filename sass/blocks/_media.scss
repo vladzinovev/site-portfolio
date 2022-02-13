@@ -1,0 +1,621 @@
+@media (max-width: 1350px){
+    .container{
+        width: 1100px;
+    }
+    .social{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .me{
+        .me_blocks{
+            grid-template-columns:400px 540px ;
+            grid-template-rows: 264px 112px 112px 112px;
+            grid-template-areas: "img descr" "img sec1" "img sec2" "img sec3" ;
+        }
+        
+        #img{
+            grid-area: img;
+        }
+        #descr{
+            grid-area: descr;
+            .me_block2_name{
+                font-size: 26px;
+                line-height: 43px;
+            }
+            .me_block2_descr{
+                font-size: 13px;
+            }
+        }
+        #sec1{
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec1;
+        }
+        #sec2{
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec2;
+        }
+        #sec3{
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec3;
+        }
+        #sec4{
+            grid-area: sec4;
+        }
+    }
+    
+    .useful{
+        &_blocks{
+            .useful_block{
+                width: 350px;
+                margin:60px 45px 0 95px ;
+                &_descr{
+                    width: 325px;
+                    
+                }
+            }
+        }
+    }
+    .skills{
+        margin:0 auto;
+    }
+    .skills_grids{
+        width: 850px;
+        margin:0 auto;
+        grid-template-columns: repeat(3 , 270px) ;
+        grid-template-rows: repeat(3 , 270px);
+    }
+    .skills_percents{
+        width: 750px;
+        margin:120px auto 0 auto;
+        grid-template-columns: repeat(2 , 350px) ;
+        grid-template-rows: repeat(3 , 70px);
+    }
+    .portfolio{
+        &_works{
+            min-height: 852px;
+            width: 852px;
+            margin:60px auto 0 auto;
+            grid-template-columns: repeat(3 , 280px);
+            grid-template-rows: repeat(3 , 280px);
+            gap: 6px;
+            .work1{
+                grid-column:2/4 ;
+                grid-row: 1/2;
+            }
+            .work4{
+                grid-column:3/4 ;
+                grid-row: 2/4;
+            }
+            .work6{
+                grid-column:1/3 ;
+                grid-row: 3/4;
+            }
+        }
+    }
+    .contacts_descr{
+        width: 450px;
+    }
+    .contacts{
+        &_descr{
+            .contacts_grid{
+                grid-template-columns: repeat(2 , 200px);
+                grid-template-rows: 45px 190px 45px;
+                .confirm{
+                    .boxcheck{
+                        margin-left: 20px;
+                       
+    
+                    }
+                    .yes{
+        
+                        width: 150px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .pageup{
+        bottom: 20px;
+        right: 20px;
+    }
+    .price{
+        &_list{
+            margin:60px auto 0 auto;
+            width: 800px;
+        }
+    }
+    
+}
+
+@media(max-width: 991px){
+    .container{
+        width: 720px;
+    }
+    .me{
+        .me_blocks{
+            grid-template-columns:300px 440px ;
+            grid-template-rows: 270px 110px 110px 110px;
+            grid-template-areas: "img descr" "img sec1" "img sec2" "img sec3" ;
+        }
+        
+        #img{
+            grid-area: img;
+            width: 300px;
+        }
+        #descr{
+            width: 440px;
+            grid-area: descr;
+            .me_block2_me{
+                margin-left: 30px;
+            }
+            .me_block2_name{
+                margin-left: 30px;
+                font-size: 26px;
+                line-height: 43px;
+            }
+            .me_block2_line{
+                margin-left: 30px;
+            }
+            .me_block2_descr{
+                width: 410px;
+                margin-left: 30px;
+                font-size: 13px;
+            }
+        }
+        #sec1{
+            margin-left: 30px;
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec1;
+        }
+        #sec2{
+            margin-left: 30px;
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec2;
+        }
+        #sec3{
+            margin-left: 30px;
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec3;
+        }
+        #sec4{
+            grid-area: sec4;
+        }
+    }
+    .useful{
+        min-height:790px;
+        &_blocks{
+            .useful_block{
+                width: 350px;
+                height: 450px;
+                margin:60px 25px 0 45px ;
+                &_descr{
+                    width: 250px;
+                    
+                }
+                &_line{
+                    
+                    height: 430px;
+                   
+                }
+            }
+        }
+    }
+    .skills{
+        margin:0 auto;
+    }
+    .skills_grids{
+        width: 720px;
+        justify-content: center;
+        grid-template-columns: repeat(2 , 270px) ;
+        grid-template-rows: repeat(4 , 270px);
+    }
+    .skills_percents{
+        width: 685px;
+        margin:120px auto 0 auto;
+        grid-template-columns: repeat(2 , 320px) ;
+        grid-template-rows: repeat(3 , 70px);
+        column-gap:45px;
+        row-gap:20px;
+    }
+    .portfolio{
+        &_works{
+            min-height: 860px;
+            width: 566px;
+            margin:60px auto 0 auto;
+            grid-template-columns: repeat(2 , 280px);
+            grid-template-rows: repeat(3 , 280px);
+            gap: 6px;
+            .work1{
+                grid-column:1/2 ;
+                grid-row: 1/2;
+            }
+            .work4{
+                grid-column:2/3 ;
+                grid-row: 3/4;
+            }
+            .work6{
+                grid-column:2/3 ;
+                grid-row: 2/3;
+            }
+        }
+    }
+    .price{
+        &_list{
+            display: block;
+            width: 350px;
+        }
+    }
+    .contact_img{
+        display: none;
+    }
+    
+    .contacts_flex{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 767px){
+    .container{
+        width: 540px;
+    }
+    .me{
+        padding-top: 60px;
+        .me_blocks{
+            grid-template-columns:500px ;
+            grid-template-rows:  500px 300px 110px 110px 110px;
+            grid-template-areas: "img" "descr" "sec1" "sec2" "sec3" ;
+        }
+        
+        #img{
+            grid-area: img;
+            width: 100%;
+            height: 100%;
+        }
+        #descr{
+            margin-top: 10px;
+            width: 440px;
+            grid-area: descr;
+            .me_block2_me{
+                margin-left: 30px;
+            }
+            .me_block2_name{
+                margin-left: 30px;
+                font-size: 26px;
+                line-height: 43px;
+            }
+            .me_block2_line{
+                margin-left: 30px;
+            }
+            .me_block2_descr{
+                width: 410px;
+                margin-left: 30px;
+                font-size: 13px;
+            }
+        }
+        #sec1{
+            margin-left: 30px;
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec1;
+        }
+        #sec2{
+            margin-left: 30px;
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec2;
+        }
+        #sec3{
+            margin-left: 30px;
+            width: 400px;
+            margin-top: 15px;
+            grid-area: sec3;
+        }
+        #sec4{
+            grid-area: sec4;
+        }
+    }
+    .useful{
+        padding-top: 60px;
+        &_blocks{
+            display: block;
+            .useful_block{
+                width: 350px;
+                height: 375px;
+                margin:60px 45px 0 95px ;
+                &_descr{
+                    width: 325px;
+                    
+                }
+                
+                
+                &_line{
+                    position: absolute;
+                    width: 0px;
+                    
+                    height: 350px;
+                    border-left: 2px solid #000000;
+                    margin-left:-50px;
+                    top: 22px;
+                    
+                }
+                &_line3{
+                    position: absolute;
+                    width: 0px;
+                    
+                    height: 350px;
+                    border-left: 2px solid #000000;
+                    margin-left:-50px;
+                    top: 458px;
+                    
+                }
+            }
+        }
+    }
+    .skills{
+        padding-top: 60px;
+    }
+    .skills_grids{
+        width: 270px;
+        justify-content: center;
+        grid-template-columns: repeat(1 , 270px) ;
+        grid-template-rows: repeat(7 , 270px);
+    }
+    .skills_percents{
+        width: 320px;
+        margin:120px auto 0 auto;
+        grid-template-columns: repeat(1 , 320px) ;
+        grid-template-rows: repeat(6 , 70px);
+        column-gap:45px;
+        row-gap:20px;
+    }
+    .portfolio{
+        padding-top: 60px;
+        &_works{
+            min-height: 860px;
+            width: 280px;
+            margin:60px auto 0 auto;
+            grid-template-columns: repeat(1 , 280px);
+            grid-template-rows: repeat(6 , 280px);
+            gap: 6px;
+            .work1{
+                grid-column:1/2 ;
+                grid-row: 1/2;
+            }
+            .work4{
+                grid-column:1/2 ;
+                grid-row: 5/6;
+            }
+            .work6{
+                grid-column:1/2 ;
+                grid-row: 6/7;
+            }
+        }
+    }
+    .contacts_flex{
+        width: 540px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 575px){
+    .container{
+        width: 320px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    .menu{
+        &_block{
+            width: 300px;
+            &_list{
+                font-size: 18px;
+            }
+        }
+    }
+    .promo{
+        &_main{
+            width: 280px;
+        }
+        h1{
+            margin-top: 20px;
+            font-size: 28px;
+            line-height: 43px;
+        }
+        &_btns{
+            margin-top: 105px;
+        }
+        .link2{
+            
+            width: 80px;
+        }
+    }
+    .me{
+        padding-top: 20px;
+        .me_blocks{
+            grid-template-columns:300px ;
+            grid-template-rows:  300px 360px 120px 120px 120px;
+            grid-template-areas: "img" "descr" "sec1" "sec2" "sec3" ;
+            
+        }
+        
+        #img{
+            grid-area: img;
+            width: 100%;
+            height: 100%;
+        }
+        #descr{
+            margin-top: 10px;
+            width: 300px;
+            grid-area: descr;
+            .me_block2_me{
+                margin-left: 10px;
+            }
+            .me_block2_name{
+                margin-left: 10px;
+                font-size: 20px;
+                line-height: 43px;
+            }
+            .me_block2_line{
+                margin-left: 10px;
+            }
+            .me_block2_descr{
+                width: 290px;
+                margin-left: 10px;
+                font-size: 13px;
+            }
+        }
+        #sec1{
+            margin-left: 10px;
+            width: 290px;
+            margin-top: 15px;
+            grid-area: sec1;
+        }
+        #sec2{
+            margin-left: 10px;
+            width: 290px;
+            margin-top: 15px;
+            grid-area: sec2;
+        }
+        #sec3{
+            margin-left: 10px;
+            width: 290px;
+            margin-top: 15px;
+            grid-area: sec3;
+        }
+        #sec4{
+            grid-area: sec4;
+        }
+    }
+    .useful{
+        padding-top: 30px;
+        &_header_h2{
+            font-size: 23px;
+        }
+        &_header_line{
+            margin: 10px auto;
+        }
+        &_blocks{
+            .useful_block{
+                width: 240px;
+                height: 470px;
+                margin: 20px 0 0 55px;
+                &_line{
+                    height: 430px;
+                    
+                }
+                &_line3{
+                    height: 435px;
+                    top: 513px;
+                    
+                }
+            }
+            .useful_block_title2{
+                width: 161px;
+            }
+            .useful_block_descr{
+                width: 230px;
+            }
+        }
+        
+    }
+    .skills{
+        padding-top: 30px;
+    }
+    .skills_percents{
+        width: 300px;
+        margin:50px auto 0 auto;
+        grid-template-columns: repeat(1 , 320px) ;
+        grid-template-rows: repeat(6 , 70px);
+        column-gap:45px;
+        row-gap:20px;
+        .percent{
+            width: 300px;
+        }
+    }
+    .portfolio{
+        &_works{
+            margin:30px auto 0 auto; 
+        }
+    }
+    .price{
+        &_list{
+            width: 275px;
+            .list{
+                width: 275px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .contacts{
+        padding-top: 30px;
+        .contacts_flex{
+            width: 300px;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        .block_name{
+            margin-top: 12px;
+            font-size: 27px;
+            line-height: 38px;
+        }
+        .text_one{
+            width: 300px;
+        }
+        &_descr{
+            width: 300px;
+            min-height: 400px;
+            .contacts_grid{
+                
+                grid-template-columns: 300px;
+                grid-template-rows: 45px 45px 190px 45px;
+                gap: 25px;
+                .textarea_block{
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                    
+                }
+                .footer_block{
+                    grid-column: 1/2;
+                    grid-row: 4/5;
+    
+                }
+                .footer_block{
+                    display: table;
+                    width: 300px;
+                    justify-content: center;
+                }
+                .contacts_btn{
+                    display: table-footer-group;
+                    margin: 20px  0 0 45px ;
+
+                }
+                .confirm{
+                    width: 280px;
+                    display: table-header-group;
+                    .boxcheck{
+                        float:left;
+                    }
+                    .yes{
+                        width: 200px;
+                        margin-left: 50px;
+                        margin-top: 9px;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}

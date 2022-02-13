@@ -1,0 +1,98 @@
+.promo{
+    min-height: 100vh;
+    background-image:url('../img/laptop2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:205px ;
+   
+    .open_menu{
+        position: absolute;
+        width: 36px;
+        height: 21px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-content: space-between;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+        &_line{
+            width: 30px;
+            height: 3px;
+            background: #fff;
+
+        }
+        .line_long{
+            width: 36px;
+            height: 3px;
+            background: #fff;
+        }
+        
+    }
+
+    &_main{
+        width: 532px;
+    }
+
+    &_name{
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        z-index: 2;
+        padding-left: 12px;
+        @include before_circle;
+    }
+
+    h1{
+        margin-top: 9px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        color: #ffffff;
+    }
+
+    &_link{
+        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+
+        &:hover{
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+
+    &_btns{
+        display: flex;
+        margin-top: 25px;
+    }
+    .link1{
+        display: block;
+        padding:12px 25px;
+        text-align: center;
+        min-width: 135px;
+        height: 45px;
+        background: $main-color;
+        border-radius: 5%;
+        &:hover{
+            box-shadow: 3px 3px 20px #fff ;
+        }
+    }
+    .link2{
+        padding:12px 0;
+        margin-left: 15px;
+        width: 100px;
+        height: 45px;
+        text-align: center;
+        border-radius: 5%;
+        &:hover{
+            box-shadow: 3px 3px 20px #fff;
+        }
+    }
+
+    
+}
